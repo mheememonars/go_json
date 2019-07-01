@@ -41,5 +41,7 @@ func main() {
 	 }`
 	var response Profile
 	json.Unmarshal([]byte(jsonData), &response)
-	fmt.Println(response)
+	fmt.Println(response.Name)
+	fmt.Println(response.Address.Province)
+	fmt.Println(response.Skill[0].Language)
 }
